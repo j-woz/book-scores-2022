@@ -2,11 +2,10 @@
 \documentclass{article}
 
 \usepackage{graphicx}
+\usepackage{helvet}
 
 \newcommand{\B}[1]{\textbf{#1}}
-%% Plot
 \newcommand{\PLOT}[1]{Figure~\ref{plot:#1}}
-%% Table
 \newcommand{\TABLE}[1]{Table~\ref{table:#1}}
 
 \begin{document}
@@ -21,27 +20,29 @@
 \noindent Here we present the results of the 2021-2022 Well-Read Gentlemen's Book Club Survey.
 \end{abstract}
 
-\noindent Over the summer of 2022 we conducted a survey\footnote{Google Form: LINK} to determine the best and most controversial books for the 2021-2022 club year.
+\noindent Over the summer of 2022 we conducted a survey\footnote{
+{\sffamily https://docs.google.com/forms/d/1cYvzmk2i9iT9OgV8YFXNERlN4\_qC5xMr2Hpz2gqxtig}} to determine the best and most controversial books for the 2021-2022 club year.
+We received $N=6$ responses.
 
-The books read are listed in \TABLE{books}.
+The books read this year are listed in \TABLE{books}.
 
 \begin{table}
   \begin{tabular}{llll}
     \B{Date} & \B{Abbrev.} & \B{Title} & \B{Author} \\ \hline \hline
-    Sep.  8 &  \B{C\&P} & Crime and Punishment & Fyodor Dostoyevski \\
-    Oct. 11 & \B{Ender's} &  Ender's Game & Orson Scott Card \\
-    Nov.  8 &  \B{Love-Ruins} & Love in the Ruins & Walker Percy \\
-    Dec. 13 &  \B{Leopard} & The Leopard & Giuseppe di Lampedusa \\
-    Jan. 10 & \B{Faces} & Til We Have Faces & C.S. Lewis \\
-    Feb.  7 &  \B{Lear} & King Lear & William Shakespeare \\
-    Mar. 14 &  \B{Iliad} & Iliad & Homer \\
-    Apr. 11 & \B{Confessions} & Confessions & St. Augustine \\
-    May   9 & \B{Violent} & The Violent Bear it Away & Flannery O'Connor \\
+    Sep.  8  & \B{C\&P} & Crime and Punishment & Fyodor Dostoyevski \\
+    Oct. 11  & \B{Ender's} &  Ender's Game & Orson Scott Card \\
+    Nov.  8  & \B{Love-Ruins} & Love in the Ruins & Walker Percy \\
+    Dec. 13  & \B{Leopard} & The Leopard & Giuseppe di Lampedusa \\
+    Jan. 10  & \B{Faces} & Til We Have Faces & C.S. Lewis \\
+    Feb.  7  & \B{Lear} & King Lear & William Shakespeare \\
+    Mar. 14  & \B{Iliad} & Iliad & Homer \\
+    Apr. 11  & \B{Confessions} & Confessions & St. Augustine \\
+    May   9  & \B{Violent} & The Violent Bear it Away & Flannery O'Connor \\
   \end{tabular}
   \caption{Table of books. \label{table:books}}
 \end{table}
 
-The main question asked was ``How ?.''  The question was on a scale of 1-5, with 5 as best.  Averages and standard deviations are shown in \PLOT{scores}.  As shown in the plot, Faces scored the highest.
+The main question asked was ``How would you score each of the books we've read with respect to the purposes of the group?''  The question was on a scale of 1-5, with 5 as best.  Averages and standard deviations are shown in \PLOT{scores}.  As shown in the plot, Faces scored the highest.
 
 \newcommand{\plotwidth}{0.9}
 
@@ -58,6 +59,8 @@ Standard deviations for the same question are shown in \PLOT{stddevs}.  As shown
 \caption{Book standard deviations.
   \label{plot:stddevs}}
 \end{figure}
+
+We also collected numbers on book completion and attendance but due to low $N$ they are not notable.
 
 In the future, we plan to split the question into three: A) a score based on personal preferences, B) a score based on appropriateness, and C) a score based on discussion quality.  We also plan to refine the score from a 5-point scale to a 10-point scale for better resolution.
 
