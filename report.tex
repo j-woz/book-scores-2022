@@ -1,6 +1,8 @@
 
 \documentclass{article}
 
+\usepackage{amsmath}
+\usepackage{bm}
 \usepackage{graphicx}
 \usepackage{helvet}
 
@@ -11,7 +13,7 @@
 \begin{document}
 
 \title{Well-Read Gentlemen's Book Scores: 2021-2022}
-\author{Justin M. Wozniak}
+\author{Justin M. Wozniak and Jamie Antonelli}
 \date{December 8, 2022}
 
 \maketitle
@@ -60,7 +62,17 @@ Standard deviations for the same question are shown in \PLOT{stddevs}.  As shown
   \label{plot:stddevs}}
 \end{figure}
 
+The whole data set may be visualized in \PLOT{viz}.  The books are shown in calendar order, and the number of votes at each score level for each book may be seen from left to right.  The averages are marked with a \pmb{\textbar}.  Columns show the number of votes for that score each book received.
+
+\begin{figure}
+\includegraphics[width=\plotwidth\columnwidth]{viz}
+\caption{Book score visualization.
+  \label{plot:viz}}
+\end{figure}
+
 We also collected numbers on book completion and attendance but due to low $N$ they are not notable.
+
+\newpage
 
 In the future, we plan to split the question into three: A) a score based on personal preferences, B) a score based on appropriateness, and C) a score based on discussion quality.  We also plan to refine the score from a 5-point scale to a 10-point scale for better resolution.
 
